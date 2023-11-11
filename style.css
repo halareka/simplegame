@@ -1,14 +1,28 @@
-button{
+body{
+    background-color: bisque;
+}
+@keyframes moving {
+    100% {transform: rotate(360deg);}
+}
+.player{
+
+
+    animation: moving 3s infinite linear;
+    width:60px; 
+    height:60px;
+    transform: rotate(0deg);
+    background-color: transparent;
+    
+}
+button {
     background-color: aquamarine;
     border: none;
-    border-radius: 20px;
-    width: 90px;
-    height: 90px;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    position:absolute; top:0; left:0;
+}
+button:hover{
     cursor: pointer;
-}
-button:hover {
-    opacity: 0.5;
-}
-p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:  rgba(184, 255, 231, 0.503);
 }
